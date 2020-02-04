@@ -33,7 +33,7 @@
     <script type="text/javascript">
       function showAlert(){
         if($("#myAlert").find("div#myAlert2").length==0){
-          $("#myAlert").append("<div class='alert alert-dark alert-dismissable fixed-top' id='myAlert2' role='alert'> <button type='button' class='close' data-dismiss='alert'  aria-hidden='true'>&times;</button>🦢🦢🦢🦢🦢🦢</div>");
+          $("#myAlert").append("<div class='alert alert-dark alert-dismissable fixed-top' id='myAlert2' role='alert'> <button type='button' class='close' data-dismiss='alert'  aria-hidden='true'>&times;</button>HONK successful!</div>");
         }
         $("#myAlert").css("display", "");
       }
@@ -55,16 +55,18 @@
       <div class="container" style="display:none;" id="myAlert">
         <div class='alert alert-dark alert-dismissable fixed-top' id='myAlert2' role='alert'>
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-            🦢🦢🦢🦢🦢🦢
+            <i>HONK</i> successful!
         </div>
   
       </div>
       
       <img class="mb-4" src="https://goose.game/svg/sign.svg" alt="" width="256" height="256">
       <!-- Short Honk -->
-      <button class="btn btn-lg btn-primary btn-block" onclick="showAlert()" type="submit" name="arg" value="off"><i><b>honk!</b></i></button>
+      <button class="btn btn-lg btn-primary btn-block" onclick="showAlert()" type="submit" name="arg" value="short">honk</button>
       <!-- Long Honk -->
-      <button class="btn btn-lg btn-primary btn-block" onclick="showAlert()" type="submit" name="arg" value="on"><i>hjonk?</i></button>
+      <button class="btn btn-lg btn-primary btn-block" onclick="showAlert()" type="submit" name="arg" value="long"><i><b>honk!</b></i></button>
+      <!-- Mario Honk -->
+      <button class="btn btn-lg btn-primary btn-block" onclick="showAlert()" type="submit" name="arg" value="mario"><i>hjonk?</i></button>
 
       <p class="mt-5 mb-3 text-muted">Made by <a href="mailto:aings1@umbc.edu">Andrew</a> with <a href="https://getbootstrap.com/">Bootstrap</a>. See it on <a href="https://github.com/ADMARIl/ADMARIl.github.io">github</a>. &copy; 2020</p>
     </form>
