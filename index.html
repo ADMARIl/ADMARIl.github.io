@@ -28,14 +28,27 @@
      <script async type="text/javascript" src="bootstrap.min.js"></script>
     <!-- Jquery Core -->
     <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+  
+  </head>
+
+  <body class="text-center">
+    <iframe name="hiddenFrame" width="0" height="0" border="0" style="display: none;"></iframe>
+
+    <audio id="sfx">
+      <source src="sounds/goose.mp3" type="audio/mpeg">
+    </audio>
 
     <!-- Custom app js-->
     <script type="text/javascript">
+      var x = document.getElementById("sfx");
+  
       function showAlert(){
         if($("#myAlert").find("div#myAlert2").length==0){
           $("#myAlert").append("<div class='alert alert-dark alert-dismissable fixed-top' id='myAlert2' role='alert'> <button type='button' class='close' data-dismiss='alert'  aria-hidden='true'>&times;</button>HONK successful!</div>");
         }
         $("#myAlert").css("display", "");
+
+        x.play();
       }
       window.setTimeout(function() {
           $('.alert').fadeTo(500, 0).slideUp(500, function(){
@@ -44,11 +57,6 @@
           });
         }, 2000);  
     </script>
-  
-  </head>
-
-  <body class="text-center">
-    <iframe name="hiddenFrame" width="0" height="0" border="0" style="display: none;"></iframe>
 
     <form class="form-signin" action="https://api.particle.io/v1/devices/3f0035001647343339383037/led?access_token=51d4077d97f5fd9dcca8c2a326893740d690bf9b" method="POST" id="mForm"  target="hiddenFrame">
       
