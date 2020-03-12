@@ -56,3 +56,7 @@ body {
 a {
   color: #57a6fb;
 }
+
+.text-muted {
+  color: #a0a6ad !important;
+}
