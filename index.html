@@ -24,8 +24,6 @@
     <!-- Custom styles for this app -->
     <link href="signin.css" rel="stylesheet">
 
-     <!-- Boostrap core JS -->
-     <script async type="text/javascript" src="bootstrap.min.js"></script>
     <!-- Jquery Core -->
     <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
   
@@ -57,28 +55,28 @@
           });
         }, 2000);  
     </script>
-
-    <form class="form-signin" action="https://api.particle.io/v1/devices/3f0035001647343339383037/led?access_token=51d4077d97f5fd9dcca8c2a326893740d690bf9b" method="POST" id="mForm"  target="hiddenFrame">
-      
-      <div class="container" style="display:none;" id="myAlert">
-        <div class='alert alert-dark alert-dismissable fixed-top' id='myAlert2' role='alert'>
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-            <i>HONK</i> successful!
+    <main>
+      <form class="form-signin" action="https://api.particle.io/v1/devices/3f0035001647343339383037/led?access_token=51d4077d97f5fd9dcca8c2a326893740d690bf9b" method="POST" id="mForm"  target="hiddenFrame">
+        
+        <div class="container" style="display:none;" id="myAlert">
+          <div class='alert alert-dark alert-dismissable fixed-top' id='myAlert2' role='alert'>
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+              <i>HONK</i> successful!
+          </div>
+    
         </div>
-  
-      </div>
-      
-      <a href="/" target="_blank" alt="home"> <img class="mb-3" src="https://goose.game/svg/sign.svg" alt="" width="256" height="256"> </a>
-      <!-- Short Honk -->
-      <button class="btn btn-lg btn-primary btn-block" onclick="showAlert()" type="submit" name="arg" value="short">honk</button>
-      <!-- Long Honk -->
-      <button class="btn btn-lg btn-primary btn-block" onclick="showAlert()" type="submit" name="arg" value="long"><i>honk!</i></button>
-      <!-- Mario Honk -->
-      <button class="btn btn-lg btn-primary btn-block" onclick="showAlert()" type="submit" name="arg" value="mario"><i><strong>hjönk?</strong></i></button>
+        
+        <a href="/" target="_blank" > <img class="mb-3" src="https://goose.game/svg/sign.svg" alt="go home" width="256" height="256"> </a>
+        <!-- Short Honk -->
+        <button class="btn btn-lg btn-primary btn-block" onclick="showAlert()" type="submit" name="arg" value="short">honk</button>
+        <!-- Long Honk -->
+        <button class="btn btn-lg btn-primary btn-block" onclick="showAlert()" type="submit" name="arg" value="long"><i>honk!</i></button>
+        <!-- Mario Honk -->
+        <button class="btn btn-lg btn-primary btn-block" onclick="showAlert()" type="submit" name="arg" value="mario"><i><strong>hjönk?</strong></i></button>
 
-      <p class="mt-5 mb-3 text-muted">Made by <a href="mailto:aings1@umbc.edu" target="_blank" alt="email">Andrew</a> with <a href="https://getbootstrap.com/" target="_blank" alt="see bootstrap">Bootstrap</a>. See it on <a href="https://github.com/ADMARIl/ADMARIl.github.io" target="_blank" alt="github source">github</a>. &copy; 2020</p>
-    </form>
-
+        <p class="mt-5 mb-3 text-muted">Made by <a href="mailto:aings1@umbc.edu" target="_blank" alt="email">Andrew</a> with <a href="https://getbootstrap.com/" target="_blank" alt="see bootstrap" rel="noopener">Bootstrap</a>. See it on <a href="https://github.com/ADMARIl/ADMARIl.github.io" target="_blank" alt="github source" rel="noopener">github</a>. &copy; 2020</p>
+      </form>
+    </main>
 
 
   </body>
